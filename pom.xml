@@ -74,6 +74,19 @@
 		</dependency>
 	</dependencies>
 
+	<distributionManagement>
+		<repository>
+			<id>nexus-release</id>
+			<name>User Project Release</name>
+			<url>http://ip-172-31-24-36:8081/nexus/content/repositories/releases/</url>
+		</repository>
+
+		<snapshotRepository>
+			<id>nexus-snapshots</id>
+			<name>User Project SNAPSHOTS</name>
+			<url>http://ip-172-31-24-36:8081/nexus/content/repositories/snapshots/</url>
+		</snapshotRepository>
+	</distributionManagement>
 	<build>
 		<plugins>
 			<plugin>
